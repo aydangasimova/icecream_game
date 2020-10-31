@@ -1,8 +1,8 @@
 import random
-from icecream_game.game.game_config import (STARTING_BUDGET,
-                                            PURCHASE_PRICE_ICE,
-                                            PURCHASE_PRICE_CONE,
-                                            OPERATING_COST)
+from game_config import (STARTING_BUDGET,
+                        PURCHASE_PRICE_ICE,
+                        PURCHASE_PRICE_CONE,
+                        OPERATING_COST)
 
 
 def get_max_ice_cream_sales(temperature: float, price: float) -> float:
@@ -63,6 +63,7 @@ def play_game(starting_balance,
               purchase_price_ice,
               purchase_price_cone,
               operating_cost) -> None:
+
     """play the game"""
 
     game_round = 1
@@ -75,19 +76,18 @@ def play_game(starting_balance,
             print("The current weather today is", get_weather(), "degrees celsius \n",
                   "Your current balance is ", current_balance)
 
-            print("Stock up your Ice ($", purchase_price_ice, "), don't forget to keep some money for the cones (max:",
-                  get_max_ice_cream_sales(get_weather(), purchase_price_ice), ")")
+            max_ice_cream_purchase = (current_balance - operating_cost) / purchase_price_ice + purchase_price_cone)
+
+            print("Stock up your Ice ($", purchase_price_ice, "), don't forget to keep some money for the cones (max:", max_ice_cream_purchase, ")")
             num_ice_bought = int(input())
 
-            print("Stock up your Ice Cones ($", purchase_price_cone,
-                  "), don't forget to keep some money for the cones (max:",
-                  max_ice_cream_sales, ")")
+            print("Stock up your Ice Cones ($", purchase_price_cone, "), don't forget to keep some money for the cones (max:", max_ice_cream_purchase, ")")
             num_cones_bought = int(input())
 
             print("Set the selling price for your delicious ice creams $(x.xx)")
             selling_price = float(input())
 
-            ice_creams_sold = get_actual_ice_cream_sales(get_weather(),
+            ice_creams_sold = get_actual_ice_cream_sales(get_weather(), #not weather but max?
                                                         stock_ice_cream + num_ice_bought,
                                                         stock_cones + num_cones_bought)
             print("You sell", ice_creams_sold)
