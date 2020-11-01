@@ -1,5 +1,7 @@
 # icecream_game
 
+Python version 3.8 is used.
+
 ##Introduction:
 This exercise challenges you to write a full game of your own! Simulating an ice cream shop with daily
 choices to make. It is the culmination of what you have learnt based on the tutorials and work you have
