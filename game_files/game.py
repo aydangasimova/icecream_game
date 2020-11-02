@@ -72,6 +72,8 @@ def play_game(starting_balance: int,
               operating_cost: float) -> None:
     """play the game"""
 
+    display_instructions()
+
     game_round = 1
     current_balance = starting_balance
     game_continues = "Y"
@@ -131,8 +133,6 @@ def play_game(starting_balance: int,
 
 
 if __name__ == "__main__":
-    # init(sys.argv[1:])
-    display_instructions()
     play_game(STARTING_BUDGET,
               PURCHASE_PRICE_ICE,
               PURCHASE_PRICE_CONE,
