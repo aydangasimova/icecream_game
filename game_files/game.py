@@ -90,14 +90,32 @@ def play_game(starting_balance: int,
 
         print("Stock up your Ice ($", purchase_price_ice, "), don't forget to keep some money for the cones (max:",
               max_ice_cream_purchase, ")")
-        num_ice_bought = int(input())
+
+        while True:
+            try:
+                num_ice_bought = int(input())
+                break
+            except ValueError:
+                print("Your input is not a valid number/integer! Please try again ...")
 
         print("Stock up your Ice Cones ($", purchase_price_cone,
               "), (max:", max_ice_cream_purchase, ")")
-        num_cones_bought = int(input())
+
+        while True:
+            try:
+                num_cones_bought = int(input())
+                break
+            except ValueError:
+                print("Your input is not a valid number/integer! Please try again ...")
 
         print("Set the selling price for your delicious ice creams $(x.xx)")
-        selling_price = float(input())
+
+        while True:
+            try:
+                selling_price = float(input())
+                break
+            except ValueError:
+                print("Your input is not a valid number! Please try again ...")
 
         get_max_ice_cream_sales(round_weather, selling_price)
 
@@ -124,8 +142,16 @@ def play_game(starting_balance: int,
                                  round_finances[2],
                                  round_finances[3])
 
+        # how do I add multiple checks in here?
         print("Do you want to continue (Y/N)?")
-        game_continues = input(str())
+        while True:
+            try:
+                game_continues = str(input()).upper()
+                print(game_continues)
+                break
+            except ValueError:
+                print("Your input must be either Y or N! Please try again ...")
+
         game_round += 1
         stock_ice_cream = 0
 
