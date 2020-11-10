@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fafdc0e0-b43a-4f4b-a908-26d20f676c45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/game_files/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/icecream_game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/icecream_game.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_files/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_files/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/game_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_files/game_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/game_test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +17,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jamR843KoSD048yCz9wUhYcCH2" />
